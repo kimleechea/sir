@@ -4,8 +4,12 @@ Title: Susceptible Infected Removed (SIR) Simulations
 Version: 0.1.10
 Author: Kimlee Chea
 Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: SIR model simulator for the statistical analysis
+    of infectious spread in a population represented by a 2D
+    matrix of color corresponding states. 
+Imports:
+    lattice,
+    gridExtra
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
