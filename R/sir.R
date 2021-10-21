@@ -2,6 +2,10 @@
 # Date: 2021-09-27
 # STAT 128-01 F21
 
+install.packages("tidyverse")
+install.packages("lattice")
+install.packages("gridExtra")
+
 library(tidyverse)
 library(lattice)
 library(gridExtra)
