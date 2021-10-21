@@ -2,8 +2,8 @@
 # Date: 2021-09-27
 # STAT 128-01 F21
 
-library(lattice)
-library(gridExtra)
+# library(lattice)
+# library(gridExtra)
 
 set.seed(1095)
 
@@ -152,5 +152,5 @@ sir = function( x = step_infection(nrow, ncol, p0),
   }
 }
 
-sir(plot = TRUE)
+# sir(plot = TRUE)
 
