@@ -3,13 +3,13 @@ Type: Package
 Title: Susceptible Infected Removed (SIR) Simulations
 Version: 0.1.11
 Author: Kimlee Chea
-Maintainer: The package maintainer <yourself@somewhere.net>
+Maintainer: The package maintainer <https://kimleechea.github.io/>
 Description: SIR model simulator for the statistical analysis
     of infectious spread in a population represented by a 2D
     matrix of color corresponding states. 
 Imports:
     lattice,
     gridExtra
-License: What license is it under?
+License: MIT
 Encoding: UTF-8
 RoxygenNote: 7.1.2
