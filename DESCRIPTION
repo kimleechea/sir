@@ -1,7 +1,7 @@
 Package: sir
 Type: Package
 Title: Susceptible Infected Removed (SIR) Simulations
-Version: 0.1.10
+Version: 0.1.11
 Author: Kimlee Chea
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: SIR model simulator for the statistical analysis

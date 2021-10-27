@@ -136,20 +136,22 @@ plot_infection = function(dd){
 #' @export
 sir = function( x = step_infection(nrow, ncol, p0),
     nrow = 50, ncol = 50, p = 0.2, p0 = 0.1, plot = FALSE, time_per_frame = 0.2, ...){
-  if(plot == TRUE){
-    infection <- step_infection(nrow, ncol, p0)
-    plot_infection(infection)
-    Sys.sleep(time_per_frame)
-    repeat{
-      infection <- step_susceptible(infection,p)
-      p1 <- plot_infection(infection)
+  time = 0L
+  plot_infection(x)
+  Sys.sleep(time_per_frame)
+  repeat{
+    x <- step_susceptible(x,p)
+    time = time + 1L
+    if(plot){
+      p1 <- plot_infection(x)
       gridExtra::grid.arrange(p1, nrow=1)
       Sys.sleep(time_per_frame)
-      if(is_infectious(infection) == FALSE){
-        break
-      }
+    }
+    if(is_infectious(x) == FALSE){
+      break
     }
   }
+  list(x=x, time = time)
 }
 
 # sir(plot = TRUE)
